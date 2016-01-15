@@ -1,4 +1,4 @@
-module.exports = (function () {
+function () {
       "use strict";
       var data = new Set();
       var push = ele => data.add(ele);
@@ -12,4 +12,4 @@ module.exports = (function () {
         next: pop,
         length: () => data.size
       }
-})()
+}()

@@ -1,0 +1,28 @@
+{
+  "name": "elevator-saga",
+  "version": "0.0.1",
+  "description": "Solution for the Elevator Saga",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://tyderion@github.com/Tyderion/Elevator-Saga.git"
+  },
+  "keywords": [
+    "elevator-saga"
+  ],
+  "author": "Gabriel Nadler, Jonas Wittlin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tyderion/Elevator-Saga/issues"
+  },
+  "homepage": "https://github.com/Tyderion/Elevator-Saga#readme",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-beautify": "^2.0.0",
+    "gulp-imports": "0.0.3",
+    "gulp-rename": "^1.2.2"
+  }
+}
