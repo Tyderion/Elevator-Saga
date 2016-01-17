@@ -7,9 +7,14 @@ function () {
         data.delete(value);
         return value;
       }
+      var contains = (value) => data.has(value);
+      var remove = (value) => data.delete(value);
       return {
         push: push,
         next: pop,
-        length: () => data.size
+        length: () => data.size,
+        print: () => console.log(data),
+        has: contains,
+        remove: remove
       }
-}()
+}();
