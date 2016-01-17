@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var gulpImports = require('gulp-imports');
 var rename = require("gulp-rename");
 var beautify = require('gulp-beautify');
+var watch = require('gulp-watch');
 
 gulp.task('imports', function() {
     gulp.src(['main.js'])
@@ -12,5 +13,9 @@ gulp.task('imports', function() {
 });
 
 gulp.task('default', function() {
-    gulp.run('imports');
+    gulp.start('imports');
 });
+
+gulp.task('watch', function() {
+	gulp.watch('*.js', ['imports']);
+})
